@@ -12,7 +12,18 @@ layout: compress
   </head>
 
   <body>
-<img src="{{ site.author.avatar | relative_url }}" alt="Author Avatar">
+<header>
+  <h1>{{ site.title }}</h1>
+  <nav>
+    <ul>
+      <li><a href="{{ site.baseurl }}">Home</a></li>
+      <li><a href="{{ site.baseurl }}/about">About</a></li>
+    </ul>
+  </nav>
+  <div class="author-avatar">
+    <img src="{{ site.author.avatar | relative_url }}" alt="Author Avatar">
+  </div>
+</header>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
